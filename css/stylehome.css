@@ -1,0 +1,357 @@
+html {
+    width: 100%;
+
+    background: url(../img/background-body.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+#header {
+    position: fixed;
+    background: #c5ebb5a1;
+    /* background: rgba(128, 128, 128, 0.699); */
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-header {
+    margin: 0.5%;
+}
+
+#title-one-link {
+    /* background: plum; */
+    color: rgb(47, 66, 50);
+
+}
+
+#menu {
+    width: 30%;
+    /* width: 40%; */
+    height: 100%;
+    /* background: pink; */
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.item-menu {
+    /* background: red; */
+    margin: 2%;
+    height: 80%;
+    border-radius: 5px;
+    color: rgb(47, 66, 50);
+
+    line-height: 100%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.item-menu:hover {
+    background: #c5ebb5;
+}
+
+@-webkit-keyframes backbody {
+    0%   {
+        background-image: url(../img/recife-letreiro.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    25%  {background-image: url(../img/Recife-MarcoZero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    50%  {background-image: url(../img/recife-marco.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    75%  {background-image: url(../img/recife-ilhas.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    100% {background-image: url(../img/recife-jcm.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+  }
+
+@-moz-keyframes backbody {
+    0%   {
+        background-image: url(../img/recife-letreiro.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    25%  {background-image: url(../img/Recife-MarcoZero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    50%  {background-image: url(../img/recife-marco.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    75%  {background-image: url(../img/recife-ilhas.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    100% {background-image: url(../img/recife-jcm.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+  }
+
+@-o-keyframes backbody {
+    0%   {
+        background-image: url(../img/recife-letreiro.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    25%  {background-image: url(../img/Recife-MarcoZero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    50%  {background-image: url(../img/recife-marco.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    75%  {background-image: url(../img/recife-ilhas.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    100% {background-image: url(../img/recife-jcm.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+  }
+
+@keyframes backbody {
+    0%   {
+        background-image: url(../img/recife-letreiro.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    25%  {background-image: url(../img/Recife-MarcoZero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    50%  {background-image: url(../img/recife-marco.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    75%  {background-image: url(../img/recife-ilhas.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    100% {background-image: url(../img/recife-jcm.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+  }
+
+#card-container {
+    /* background: green; */
+    width: 100%;
+    height: 560px;
+
+    -webkit-animation: backbody 25s infinite; /* Safari 4+ */
+    -moz-animation:    backbody 25s infinite; /* Fx 5+ */
+    -o-animation:      backbody 25s infinite; /* Opera 12+ */
+    animation:         backbody 25s infinite; /* IE 10+, Fx 29+ */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* estilo do card - começo */
+
+.card {
+    color: white;
+    width: 65%;
+    height: 75%;
+    /* background: rgba(124, 124, 124, 0); */
+    background: rgba(124, 124, 124, 0.678);
+    border-radius: 30px;
+
+    margin: auto;
+    padding: 1%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card:hover {
+    width: 70%;
+    height: 80%;
+    background: rgba(124, 124, 124, 1);
+    box-shadow: 1px 1px 10px black;
+}
+
+#foto {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+#skills {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#about-me {
+    text-align: justify;
+}
+
+#redes, #tecnologias {
+    width: 50%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+/* estilo do card - fim */
+
+#curriculum {
+    background-image: url(../img/work-desk.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 560px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#link-curriculum {
+    background: cornflowerblue;
+    width: 28%;
+    height: 80%;
+    margin-right: 20%;
+}
+
+#link-curriculum:hover {
+    box-shadow: 1px 1px 1px 2px rgb(107, 94, 94);
+    width: 30%;
+    height: 82%;
+}
+
+#image-link-curriculum {
+    width: 100%;
+    height: 100%;
+}
+
+#portifolio {
+    /* background: transparent; */
+    width: 100%;
+    height: 560px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title-portifolio {
+    font-size: 40px;
+    color: white;
+}
+
+#container-portifolio {
+    width: 100%;
+    height: 80%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.item-portifolio {
+    background: rgba(128, 128, 128, 0.685);
+    border-radius: 15px;
+    width: 30%;
+    height: 80%;
+    padding: 5%;
+
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-portifolio:hover {
+    /* background-image: url(https://images.amcnetworks.com/ifccenter.com/wp-content/uploads/2020/01/ghost-in-the-shell-1280.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;  
+
+    color: transparent;
+    
+    width: 50%;
+    height: 90%;
+}
+
+#project-one:hover {
+    background-image: url(../img/projcounter.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#project-two:hover {
+    background-image: url(../img/projscrollcards.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#footer {
+    color: rgb(14, 177, 35);
+    background: black;
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
