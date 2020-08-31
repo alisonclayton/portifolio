@@ -1,70 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alison CLayton | PORTIFOLIO</title>
 
     <link rel="stylesheet" href="./css/stylehome.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Special+Elite">
 </head>
+
 <body>
 
-    <header id="header">
-        <h1 id="title-one" class="item-header">
-            <a id="title-one-link" 
-                href="#card-container">ALISON CLAYTON</a>
-        </h1>
-        <div id="menu" class="item-header">
-            <!-- <a class="item-menu" href="#card-container">CARD</a> -->
-            <a class="item-menu" href="#curriculum">CURRICULUM VITAE</a>
-            <a class="item-menu" href="#portifolio">PORTIFOLIO</a>
+    <header id="header" class="div-header-style flex-div-end">
+        <div id="menu" class="item-header flex-div-row-center">
+            <a class="item-menu flex-div-center" 
+                href="#frist-div">HOME</a>
+            <a class="item-menu flex-div-center" 
+                href="#tecnologies-div">TECNOLOGIAS</a>
+            <a class="item-menu flex-div-center" 
+                href="#curriculum">CURRICULUM VITAE</a>
+            <a class="item-menu flex-div-center" 
+                href="#portifolio">PORTIFOLIO</a>
         </div>
     </header>
 
-    <div id="card-container">
+    <div id="frist-div" class="div-sec-lpage container-flex-column-center">
+        <h1 id="title-one" 
+            class="special-elite-anime typing-animation">
+            ALISON CLAYTON | Front-End Developer
+        </h1>
+    </div>
 
-        <div class="card">
+    <div id="tecnologies-div" class="div-sec-lpage about-me">
 
-            <img id="foto" alt="Foto de Perfil de Alison" src="./img/foto-final.jpg">
-    
-            <div id="skills">
+        <img id="foto" alt="Foto de Perfil de Alison" src="./img/foto-monocroma-decalque.png">
 
-                <h4>Front-End Developer</h4>
-                <p id="about-me">Hello everybody! My name is Alison Clayton, 
-                I am a student of systems analysis and 
-                development. I work with technology since 
-                I was 11 years old, when I took my first 
-                course in cobol programming and administration 
-                of windows servers. From then on, I never 
-                stopped. Here are some of my most recent 
-                projects and my resume.</p>
-               <h4>SOCIAL MEDIA</h4>
-            <ul id="redes">
-                <li><a href="https://github.com/alisonclayton" target="_blank">
-                    <img class="logo" alt="Logo do github" src="./img/github-logo.png"></a></li>
-                <li><a href="https://www.linkedin.com/in/alison-clayton/" target="_blank">
-                    <img class="logo" alt="Logo do linkedin" src="./img/linkedin-logo.png"></a></li>
-                <li><a href="https://codepen.io/collection/DbQGVx" target="_blank">
-                    <img class="logo" alt="Logo do codepen" src="./img/codepen-logo.png"></a></li>
-            </ul>
-            <h4>TECHNOLLOGIES</h4>
-            <ul id="tecnologias">
-                <li><img class="logo" alt="Logo do HTML5" src="./img/html5-logo-1.png"></li>
-                <li><img class="logo" alt="Logo do CSS3" src="./img/css-3-logo-1.png"></li>
-                <li><img class="logo" alt="Logo do Javascript" src="./img/js-png-1.png"></li>
-            </ul>
-    
-            </div>
-    
-        </div>
+        <ul id="tecnologies-list" class="tecnologies-list">
+            <li><img class="logo-tec" alt="Logo do HTML5" src="./img/html5-logo-1.png"></li>
+            <li><img class="logo-tec" alt="Logo do CSS3" src="./img/css-3-logo-1.png"></li>
+            <li><img class="logo-tec" alt="Logo do Javascript" src="./img/js-png-1.png"></li>
+            <li><img class="logo-tec" alt="Logo do React" src="./img/react-logo-ed.png"></li>
+            <li><img class="logo-tec" alt="Logo do Javascript" src="./img/angular-logo.png"></li>
+            <li><img class="logo-tec" alt="Logo do Node.js" src="./img/nodejs_logo.png"></li>
+        </ul>
 
     </div>
 
-    <div id="curriculum">
+    <div id="curriculum" class="div-sec-lpage">
 
         <!-- <a id="btn-download" class="div-item-sidenav"
         href="./assets/Alison Clayton - Front-End.pdf" 
         download="Alison Clayton - Front-End.pdf">DOWNLOAD</a> -->
+
+        <div id="side-foto" class="item-div-lpage container-flex-column-center">
+  
+            <p id="about-me-p">Hello everybody! My name is Alison Clayton, 
+            I am a student of systems analysis and 
+            development. I work with technology since 
+            I was 11 years old, when I took my first 
+            course in cobol programming and administration 
+            of windows servers. From then on, I never 
+            stopped. Here are some of my most recent 
+            projects and my resume.</p>
+
+        </div>
 
         <a id="link-curriculum" href="./pages/curriculumvitae.html">
         <img id="image-link-curriculum" src="./img/curric-img.png"
@@ -72,18 +72,19 @@
         </a>
     </div>
 
-    <div id="portifolio">
+    <div id="portifolio" class="div-sec-lpage">
         
-        <h4 class="title-div" id="title-portifolio">PORTIFOLIO</h4>
+        <h4 class="special-elite-anime" 
+            id="title-portifolio">PORTIFOLIO</h4>
 
         <div id="container-portifolio">
             
             <a id="project-one" 
-                class="item-portifolio" 
+                class="item-portifolio special-elite-anime" 
                 href="https://alisonclayton.github.io/simplecounter/" target="_blank">SIMPLE COUNTER</a>
             
             <a id="project-two" 
-                class="item-portifolio" 
+                class="item-portifolio special-elite-anime" 
                 href="https://alisonclayton.github.io/scrollrowcards/" target="_blank">SCROLL ROW CARDS</a>
 
             <!-- <a id="project-three" class="item-portifolio" href="http://www.laco.ufpe.br/?desenho=tratamento-do-caldo" target="_blank">MODELAGEM COMPUTACIONAL</a> -->
@@ -93,7 +94,17 @@
     </div>
 
     <footer id="footer">
-        <p>made By Alison Clayton</p>
+        <p id="msg-end">made By Alison Clayton</p>
+
+        <ul id="redes">
+            <li><a href="https://github.com/alisonclayton" target="_blank">
+                <img class="logo-redes" alt="Logo do github" src="./img/github-logo.png"></a></li>
+            <li><a href="https://www.linkedin.com/in/alison-clayton/" target="_blank">
+                <img class="logo-redes" alt="Logo do linkedin" src="./img/linkedin-logo.png"></a></li>
+            <li><a href="https://codepen.io/collection/DbQGVx" target="_blank">
+                <img class="logo-redes" alt="Logo do codepen" src="./img/codepen-logo.png"></a></li>
+        </ul>
+    
     </footer>
     
 </body>
