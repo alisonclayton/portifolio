@@ -2,10 +2,13 @@ html {
     width: 100%;
 
     background: url(../img/background-body.jpeg) no-repeat center center fixed; 
+    /* background: black; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
+    scroll-behavior: smooth;
 }
 
 * {
@@ -28,38 +31,39 @@ a {
     height: 100%;
 }
 
-#header {
+.div-header-style {
     position: fixed;
-    background: #c5ebb5a1;
-    /* background: rgba(128, 128, 128, 0.699); */
+    background: rgba(29, 28, 28, 0.596);
+    /* background: #c5ebb5a1; */
     width: 100%;
     height: 60px;
+}
 
+.flex-div-end {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .item-header {
     margin: 0.5%;
 }
 
-#title-one-link {
-    /* background: plum; */
-    color: rgb(47, 66, 50);
-
+.item-header {
+    width: 60%;
+    height: 100%;
 }
 
-#menu {
-    width: 30%;
-    /* width: 40%; */
-    height: 100%;
-    /* background: pink; */
+.flex-div-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.flex-div-row-center {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
 }
 
 .item-menu {
@@ -67,17 +71,14 @@ a {
     margin: 2%;
     height: 80%;
     border-radius: 5px;
-    color: rgb(47, 66, 50);
-
+    color: #53ec11ec;
     line-height: 100%;
     text-align: center;
-    align-items: center;
-    display: flex;
-    justify-content: center;
 }
 
 .item-menu:hover {
     background: #c5ebb5;
+    color: black;
 }
 
 @-webkit-keyframes backbody {
@@ -176,52 +177,112 @@ a {
     }
   }
 
-#card-container {
-    /* background: green; */
+.div-sec-lpage {
     width: 100%;
-    height: 560px;
-
-    -webkit-animation: backbody 25s infinite; /* Safari 4+ */
-    -moz-animation:    backbody 25s infinite; /* Fx 5+ */
-    -o-animation:      backbody 25s infinite; /* Opera 12+ */
-    animation:         backbody 25s infinite; /* IE 10+, Fx 29+ */
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    height: 650px;
 }
 
-/* estilo do card - começo */
+/* #frist-div {
+    background: black;
+} */
+
+#about-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#about-me-p {
+    margin: 10%;
+    text-align: justify;
+    background: #53ec11c9;
+}
+
+#foto {
+    /* background: darkcyan; */
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: #53ec11ec;
+}
+
+.item-div-lpage {
+    width: 60%;
+    font-size: 20px;
+}
+
+/* #side-foto {
+    background: lightcoral;
+} */
+
+.container-flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.borda-texto-destaque {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #53ec11ec;
+    color: rgb(46, 46, 46);
+}
+
+.special-elite-anime {
+    border-right: 2px solid #53ec11ec;
+    color: #53ec11ec;
+    font-family: 'Special Elite', Helvetica, Arial, sans-serif;
+    font-size: 3em;
+    margin: 0 auto; 
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.typing-animation {
+    animation: blinkCursor 500ms infinite normal, typing 4s steps(40) 1s infinite normal;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    70% {
+        width: 937px;
+    }
+    100% {
+        width: 937px;
+    }
+}
+
+@keyframes blinkCursor {
+    from {
+        border-right-color: #53ec11ec;
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
 
 .card {
     color: white;
-    width: 65%;
-    height: 75%;
+    width: 60%;
+    height: 60%;
     /* background: rgba(124, 124, 124, 0); */
     background: rgba(124, 124, 124, 0.678);
     border-radius: 30px;
 
-    margin: auto;
-    padding: 1%;
+    /* margin: auto; */
+    padding: 3%;
 
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.card:hover {
-    width: 70%;
-    height: 80%;
+/* .card:hover {
     background: rgba(124, 124, 124, 1);
     box-shadow: 1px 1px 10px black;
-}
-
-#foto {
-    width: 40%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 2rem;
-}
+} */
 
 #skills {
     width: 55%;
@@ -231,23 +292,39 @@ a {
     justify-content: space-around;
 }
 
-#about-me {
-    text-align: justify;
-}
+.about-me {
+    /* background: green; */
 
-#redes, #tecnologias {
-    width: 50%;
-    box-sizing: border-box;
+    -webkit-animation: backbody 25s infinite; /* Safari 4+ */
+    -moz-animation:    backbody 25s infinite; /* Fx 5+ */
+    -o-animation:      backbody 25s infinite; /* Opera 12+ */
+    animation:         backbody 25s infinite; /* IE 10+, Fx 29+ */
+
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
 }
 
-.logo {
-    width: 60px;
-    height: 60px;
+.tecnologies-list {
+    /* background: rgba(69, 126, 69, 0.336); */
+    /* background: tomato; */
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-/* estilo do card - fim */
+.logo-tec {
+    width: 160px;
+}
+
+.logo-redes {
+    width: 40px;
+    margin: 5%;
+}
 
 #curriculum {
     background-image: url(../img/work-desk.jpeg);
@@ -290,11 +367,6 @@ a {
     align-items: center;
 }
 
-#title-portifolio {
-    font-size: 40px;
-    color: white;
-}
-
 #container-portifolio {
     width: 100%;
     height: 80%;
@@ -306,16 +378,15 @@ a {
 }
 
 .item-portifolio {
-    background: rgba(128, 128, 128, 0.685);
+    background: #53ec11c4;
     border-radius: 15px;
     width: 30%;
     height: 80%;
     padding: 5%;
 
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
     text-align: center;
+    font-size: inherit;
+    color: black;
 
     display: flex;
     align-items: center;
@@ -346,12 +417,25 @@ a {
 }
 
 #footer {
-    color: rgb(14, 177, 35);
-    background: black;
+    color: black;
+    background: rgb(14, 177, 35);
     width: 100%;
     height: 60px;
 
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+}
+
+#msg-end {
+    /* background: chartreuse; */
+    margin-left: 2%;
+}
+
+#redes {
+    /* background: yellow; */
+    width: 20%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
 }
